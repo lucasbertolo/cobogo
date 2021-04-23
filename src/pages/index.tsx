@@ -5,7 +5,7 @@ import { useEffect } from 'react';
 
 export default function Index() {
   return (
-    <Flex w="100vw" h="300vh" direction="column">
+    <Flex maxW="100vw" h="300vh" direction="column">
       <Header />
 
       <Home />

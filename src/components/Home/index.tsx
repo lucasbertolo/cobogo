@@ -1,55 +1,45 @@
 import {
   Flex,
+  Heading,
   Box,
-  Image,
+  Text,
   useMediaQuery,
-  BoxProps,
-  FlexProps,
+  VStack,
 } from '@chakra-ui/react';
-import LinkMedia from '../LinkMedia';
 
-// TODO -  Improve Image quality
-
+// TODO - RESPONSIVE AND IMAGE IMPROVEMENT
 export default function Home() {
   const [isLargerThanTablet] = useMediaQuery('(min-width: 1180px)');
 
-  console.log('isLargerThanTab', isLargerThanTablet);
-
-  const boxProps: BoxProps = {};
-
-  const flexProps: FlexProps = {};
-
-  if (isLargerThanTablet) {
-    console.log('aqui');
-    boxProps.mt = '140px';
-    boxProps.ml = '20';
-
-    flexProps.backgroundRepeat = 'no-repeat';
-    flexProps.backgroundPosition = 'right';
-    flexProps.backgroundSize = 'contain';
-    flexProps.justifyContent = 'flex-start';
-    flexProps.bgImage =
-      'url(https://ik.imagekit.io/2agnc6wu5cbty/WhatsApp_Image_2021-04-22_at_19.40.30-removebg-preview_5BtURgbTSz.png)';
-  }
-
   return (
     <Flex
-      margin="20px auto"
-      h="90vh"
-      w="80%"
-      justifyContent="center"
-      position="relative"
+      margin="0 auto"
+      h="100vh"
+      w="75%"
+      justifyContent="flex-start"
+      placeItems="center"
       direction="row"
-      {...flexProps}
     >
-      <LinkMedia />
+      <Flex mt="20" ml="5" maxW="40%" zIndex={2}>
+        <VStack spacing="4">
+          <Heading as="h1" w="100%" fontSize="5xl" letterSpacing="tight">
+            Espaço Cobogó
+          </Heading>
 
-      <Box margin="auto" w={'400px'} h={'300px'} {...boxProps}>
-        <Image
-          src="https://ik.imagekit.io/2agnc6wu5cbty/logo_B-1mkNVeA4.png"
-          alt="logo-cobogo"
-        />
-      </Box>
+          <Heading as="h2" w="100%" fontSize="2xl" fontWeight="normal">
+            Salas Comerciais
+          </Heading>
+
+          <Text fontSize="sm" fontFamily="Open Sans">
+            Conheça nossas salas e texto maneiro com frase aleatória que seja
+            mais ou menos desse tamanho
+          </Text>
+
+          <Text fontSize="xs" width="100%">
+            * consulte a disponibilidade das salas
+          </Text>
+        </VStack>
+      </Flex>
     </Flex>
   );
 }

@@ -1,6 +1,6 @@
 import { Flex, HStack } from '@chakra-ui/react';
+import { SmallLogo } from '../Logo';
 import { LinkItem } from './LinkItem';
-import { Logo } from './Logo';
 
 export default function Header() {
   return (
@@ -10,14 +10,13 @@ export default function Header() {
       maxWidth={1480}
       h="20"
       mx="auto"
-      mt="4"
+      mt="10"
       px="0"
       justifyContent="space-around"
-      bg="whiteAlpha.700"
       position="fixed"
       zIndex={1}
     >
-      <Logo />
+      <SmallLogo />
 
       <Flex direction="row">
         <HStack spacing="12">
