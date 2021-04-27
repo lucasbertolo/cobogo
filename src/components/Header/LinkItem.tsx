@@ -11,7 +11,7 @@ export function LinkItem({ name, isActive = false, path = '' }: LinkItemProps) {
     <Link
       href={path}
       textDecoration="none"
-      _hover={{ textDecoration: 'none', color: 'blackAlpha.700' }}
+      _hover={{ textDecoration: 'none', color: 'blackAlpha.600' }}
     >
       <Text>{name}</Text>
     </Link>

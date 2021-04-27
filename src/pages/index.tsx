@@ -1,7 +1,7 @@
 import { Flex } from '@chakra-ui/react';
 import Header from '../components/Header';
 import Home from '../components/Home';
-import { useEffect } from 'react';
+import Tenants from '../components/Tenants';
 
 export default function Index() {
   return (
@@ -9,6 +9,8 @@ export default function Index() {
       <Header />
 
       <Home />
+
+      <Tenants />
     </Flex>
   );
 }
