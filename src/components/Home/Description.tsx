@@ -22,7 +22,7 @@ export default function Description() {
           ou menos desse tamanho
         </Text>
 
-        <Text fontSize="xs" width="100%">
+        <Text fontSize="xs" width="100%" pt="4" fontFamily="Open Sans">
           * consulte a disponibilidade das salas
         </Text>
       </VStack>

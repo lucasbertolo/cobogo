@@ -7,7 +7,7 @@ export default function Home() {
     <Flex
       margin="0 auto"
       h="100vh"
-      w="75%"
+      w="70%"
       justifyContent="flex-start"
       placeItems="center"
       direction="row"

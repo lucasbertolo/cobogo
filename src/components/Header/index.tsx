@@ -14,7 +14,7 @@ export default function Header() {
       position="fixed"
       zIndex={1}
     >
-      <Flex width="75%" justifyContent="space-between">
+      <Flex width="70%" justifyContent="space-between">
         <SmallLogo />
 
         <Flex direction="row">
