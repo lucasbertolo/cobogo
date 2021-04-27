@@ -1,17 +1,17 @@
-import { Link, Text } from '@chakra-ui/react';
+import { Link, Text, LinkProps as ChakraLinkProps } from '@chakra-ui/react';
 
-interface LinkItemProps {
+interface LinkItemProps extends ChakraLinkProps {
   name: string;
   path?: string;
   isActive?: boolean;
 }
 
-export function LinkItem({ name, isActive = false, path = '' }: LinkItemProps) {
+export function LinkItem({ name, isActive = false, ...rest }: LinkItemProps) {
   return (
     <Link
-      href={path}
       textDecoration="none"
       _hover={{ textDecoration: 'none', color: 'blackAlpha.600' }}
+      {...rest}
     >
       <Text>{name}</Text>
     </Link>

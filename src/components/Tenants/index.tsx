@@ -45,9 +45,8 @@ export default function Tenants() {
       <Heading>Hey ther</Heading>
 
       <SimpleGrid
-        gridGap="4"
-        gridTemplateColumns="repeat(auto-fill, minmax(200px, 1fr))"
-        // minH="350px"
+        minChildWidth="200px"
+        spacing="4"
         paddingY="10"
         w="100%"
         bg="red"
