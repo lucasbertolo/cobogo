@@ -1,5 +1,6 @@
 import { Flex, Heading, SimpleGrid, Text } from '@chakra-ui/react';
 import Card, { CardProps } from '../../components/Card';
+import { CONTAINER_WIDTH } from '../../config';
 
 const TOTAL_ROOMS = 4;
 
@@ -39,8 +40,8 @@ export default function Tenants() {
   return (
     <Flex
       margin="0 auto"
-      minH="100vh"
-      w="70%"
+      h="150vh"
+      w={CONTAINER_WIDTH}
       justifyContent="flex-start"
       placeItems="center"
       direction="column"

@@ -1,8 +1,9 @@
+import { Flex } from '@chakra-ui/react';
+import { AnimatePresence, motion } from 'framer-motion';
+import { wrap } from 'popmotion';
 import * as React from 'react';
 import { useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
-import { wrap } from 'popmotion';
-import { images } from './image-data';
+import ArrowSlider from './ArrowSlider';
 
 const variants = {
   enter: (direction: number) => {
@@ -36,7 +37,11 @@ const swipePower = (offset: number, velocity: number) => {
   return Math.abs(offset) * velocity;
 };
 
-export const Example = () => {
+interface SlideshowProps {
+  images: string[];
+}
+
+export default function Slideshow({ images }: SlideshowProps) {
   const [[page, direction], setPage] = useState([0, 0]);
 
   // We only have 3 images, but we paginate them absolutely (ie 1, 2, 3, 4, 5...) and
@@ -50,9 +55,16 @@ export const Example = () => {
   };
 
   return (
-    <>
+    <Flex
+      h="100%"
+      w="100%"
+      alignItems="center"
+      position="relative"
+      overflow="hidden"
+    >
       <AnimatePresence initial={false} custom={direction}>
         <motion.img
+          style={{ position: 'absolute', maxWidth: '100%' }}
           key={page}
           src={images[imageIndex]}
           custom={direction}
@@ -78,12 +90,10 @@ export const Example = () => {
           }}
         />
       </AnimatePresence>
-      <div className="next" onClick={() => paginate(1)}>
-        {'‣'}
-      </div>
-      <div className="prev" onClick={() => paginate(-1)}>
-        {'‣'}
-      </div>
-    </>
+
+      <ArrowSlider direction="left" onClick={() => paginate(-1)} />
+
+      <ArrowSlider direction="right" onClick={() => paginate(1)} />
+    </Flex>
   );
-};
+}

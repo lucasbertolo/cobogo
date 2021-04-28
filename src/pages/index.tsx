@@ -2,6 +2,7 @@ import { Flex } from '@chakra-ui/react';
 import Header from '../components/Header';
 import Home from '../clusters/Home';
 import Tenants from '../clusters/Tenants';
+import Gallery from '../clusters/Gallery';
 
 export default function Index() {
   return (
@@ -11,6 +12,8 @@ export default function Index() {
       <Home />
 
       <Tenants />
+
+      <Gallery />
     </Flex>
   );
 }

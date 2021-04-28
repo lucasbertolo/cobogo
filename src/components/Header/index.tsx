@@ -1,4 +1,5 @@
-import { LinkBox, Flex, HStack } from '@chakra-ui/react';
+import { Flex, HStack, LinkBox } from '@chakra-ui/react';
+import { CONTAINER_WIDTH } from '../../config';
 import { useScrolling } from '../../hooks/useScrolling';
 import { SmallLogo } from '../Logo';
 import { LinkItem } from './LinkItem';
@@ -18,7 +19,7 @@ export default function Header() {
       zIndex={1}
       opacity={isScrolling ? '0.2' : '1'}
     >
-      <Flex width="70%" justifyContent="space-between">
+      <Flex width={CONTAINER_WIDTH} justifyContent="space-between">
         <SmallLogo />
 
         <Flex direction="row">
