@@ -1,8 +1,11 @@
 import { LinkBox, Flex, HStack } from '@chakra-ui/react';
+import { useScrolling } from '../../hooks/useScrolling';
 import { SmallLogo } from '../Logo';
 import { LinkItem } from './LinkItem';
 
 export default function Header() {
+  const isScrolling = useScrolling();
+
   return (
     <Flex
       as="header"
@@ -13,6 +16,7 @@ export default function Header() {
       justifyContent="center"
       position="fixed"
       zIndex={1}
+      opacity={isScrolling ? '0.2' : '1'}
     >
       <Flex width="70%" justifyContent="space-between">
         <SmallLogo />

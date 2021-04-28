@@ -1,5 +1,5 @@
 import { Flex, Heading, SimpleGrid, Text } from '@chakra-ui/react';
-import Card, { CardProps } from './Card';
+import Card, { CardProps } from '../../components/Card';
 
 const TOTAL_ROOMS = 4;
 
@@ -35,8 +35,6 @@ export default function Tenants() {
   if (availableRooms > 0) {
     tenants = currentTenants.concat([{ available: true }]);
   }
-
-  console.log('tenants', tenants);
 
   return (
     <Flex
@@ -94,7 +92,7 @@ export default function Tenants() {
 
       <SimpleGrid
         minChildWidth="150px"
-        spacing="10"
+        spacing="7"
         paddingY="10"
         w="100%"
         minH="450px"
