@@ -1,25 +1,14 @@
-import { Flex, Heading } from '@chakra-ui/react';
+import { Flex } from '@chakra-ui/react';
 import Slideshow from '../../components/Slideshow';
+import Title from '../../components/Title';
 import { CONTAINER_WIDTH } from '../../config';
-
-export const images = [
-  'https://d33wubrfki0l68.cloudfront.net/dd23708ebc4053551bb33e18b7174e73b6e1710b/dea24/static/images/wallpapers/shared-colors@2x.png',
-  'https://d33wubrfki0l68.cloudfront.net/49de349d12db851952c5556f3c637ca772745316/cfc56/static/images/wallpapers/bridge-02@2x.png',
-  'https://d33wubrfki0l68.cloudfront.net/594de66469079c21fc54c14db0591305a1198dd6/3f4b1/static/images/wallpapers/bridge-01@2x.png',
-];
+import { GALLERY_IMAGES } from '../../config/data';
 
 export default function Gallery() {
   return (
-    <Flex
-      h="100vh"
-      mt="16"
-      w={CONTAINER_WIDTH}
-      m="auto"
-      direction="column"
-      //   justify="flex-start"
-    >
-      <Heading>Fotos do role</Heading>
-      <Slideshow images={images} />
+    <Flex h="100vh" mt="16" w={CONTAINER_WIDTH} m="auto" direction="column">
+      <Title label="Espaço" />
+      <Slideshow images={GALLERY_IMAGES} />
     </Flex>
   );
 }
