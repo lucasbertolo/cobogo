@@ -64,7 +64,7 @@ export default function Slideshow({ images }: SlideshowProps) {
     >
       <AnimatePresence initial={false} custom={direction}>
         <motion.img
-          style={{ position: 'absolute', maxWidth: '100%' }}
+          style={{ position: 'absolute', maxWidth: '100%', height: '100%' }}
           key={page}
           src={images[imageIndex]}
           custom={direction}

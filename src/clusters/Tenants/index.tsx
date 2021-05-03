@@ -1,4 +1,4 @@
-import { Flex, SimpleGrid, Text } from '@chakra-ui/react';
+import { Flex, SimpleGrid, Text, Wrap } from '@chakra-ui/react';
 import Card from '../../components/Card';
 import Title from '../../components/Title';
 import { CONTAINER_WIDTH } from '../../config';
@@ -24,7 +24,6 @@ export default function Tenants() {
   return (
     <Flex
       margin="0 auto"
-      h="150vh"
       w={CONTAINER_WIDTH}
       justifyContent="flex-start"
       placeItems="center"

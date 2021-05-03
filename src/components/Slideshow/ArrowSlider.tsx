@@ -1,4 +1,5 @@
 import { Box, BoxProps } from '@chakra-ui/react';
+import { FaChevronRight, FaChevronLeft } from 'react-icons/fa';
 
 interface ArrowSlider {
   direction: 'left' | 'right';
@@ -9,17 +10,15 @@ export default function ArrowSlider({ direction, onClick }: ArrowSlider) {
   const directionProps: BoxProps = {};
 
   if (direction === 'right') directionProps.right = '10px';
-  else {
-    directionProps.left = '10px';
-    directionProps.transform = 'scale(-1)';
-  }
+  else directionProps.left = '10px';
 
+  console.log('direction', direction);
   return (
     <Box
       as="span"
       top="calc(50% - 20px)"
       pos="absolute"
-      bg="white"
+      bg="black"
       borderRadius="30px"
       w="40px"
       h="40px"
@@ -34,7 +33,7 @@ export default function ArrowSlider({ direction, onClick }: ArrowSlider) {
       onClick={onClick}
       {...directionProps}
     >
-      {direction === 'right' ? '‣' : '‣'}
+      {direction === 'right' ? <FaChevronRight /> : <FaChevronLeft />}
     </Box>
   );
 }
