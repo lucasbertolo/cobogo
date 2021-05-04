@@ -29,7 +29,7 @@ export default function Tenants() {
       placeItems="center"
       direction="column"
     >
-      <Title label="Colegas" rightInfo={availableRoomsLabel} />
+      <Title label="Nossos Colegas" rightInfo={availableRoomsLabel} />
 
       <Text
         mb="8"

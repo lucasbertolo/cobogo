@@ -7,13 +7,21 @@ import { GALLERY_IMAGES } from '../../config/data';
 export default function Gallery() {
   return (
     <Flex h="100vh" mt="16" w={CONTAINER_WIDTH} m="auto" direction="column">
-      <Title label="Espaço" />
+      <Title label="O Espaço" />
 
       <Flex w="100%" h="80%" m="auto" pos="relative" placeItems="center">
-        <Box position="absolute" width="90%" bg="gray.800" h="95%" right="0" />
+        <Box
+          position="absolute"
+          width="90%"
+          bg="gray.800"
+          h="95%"
+          right="0"
+          boxShadow="9px 10px 5px -5px rgba(0,0,0,0.2)"
+        />
 
         <HStack zIndex="1" h="80%" w="100%" spacing="0" fontFamily="Open Sans">
           <Slideshow images={GALLERY_IMAGES} />
+
           <Box w="75%" h="100%">
             <VStack spacing="4">
               <Flex
@@ -22,19 +30,39 @@ export default function Gallery() {
                 bg="gray.700"
                 justifyContent="space-between"
               >
-                <Heading as="h4" fontSize="xl" w="50%" py="4" px="10">
+                <Heading as="h4" fontSize="xl" w="50%" py="4" px="6">
                   Salas planejadas
                 </Heading>
                 <Text px="16" py="4" fontSize="sm">
-                  2008
+                  2020
                 </Text>
               </Flex>
 
-              <Box p="10">
-                <Text>
-                  Bla bla bla whiskas sache, Bla bla bla whiskas sache, Bla bla
-                  bla whiskas sache, Bla bla bla whiskas sache
-                </Text>
+              <Box p="6">
+                <VStack spacing="3">
+                  <Heading as="h6" color="red" fontSize="sm" w="100%">
+                    Planejamento
+                  </Heading>
+                  <Text w="100%" fontSize="smaller">
+                    Bla bla bla whiskas sache, Bla bla bla whiskas sache, Bla
+                    bla bla whiskas sache, Bla bla bla whiskas sache
+                  </Text>
+
+                  <Heading as="h6" color="white" fontSize="sm" w="100%">
+                    Inauguração
+                  </Heading>
+                  <Text w="100%" fontSize="smaller">
+                    2020
+                  </Text>
+
+                  <Heading as="h6" fontSize="sm" w="100%">
+                    Planejamento
+                  </Heading>
+                  <Text w="100%" fontSize="smaller">
+                    Bla bla bla whiskas sache, Bla bla bla whiskas sache, Bla
+                    bla bla whiskas sache, Bla bla bla whiskas sache
+                  </Text>
+                </VStack>
               </Box>
             </VStack>
           </Box>

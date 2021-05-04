@@ -17,7 +17,11 @@ export default function Header() {
       justifyContent="center"
       position="fixed"
       zIndex={1}
-      opacity={isScrolling ? '0.2' : '0.4'}
+      opacity={isScrolling ? '0.15' : '0.35'}
+      transition="opacity 0.3s"
+      _hover={{
+        opacity: '1',
+      }}
     >
       <Flex width={CONTAINER_WIDTH} justifyContent="space-between">
         <SmallLogo />

@@ -10,7 +10,7 @@ export function LinkItem({ name, isActive = false, ...rest }: LinkItemProps) {
   return (
     <Link
       textDecoration="none"
-      _hover={{ textDecoration: 'none', color: 'blackAlpha.600' }}
+      _hover={{ textDecoration: 'none', color: 'whiteAlpha.500' }}
       {...rest}
     >
       <Text>{name}</Text>

@@ -45,3 +45,10 @@ export const GALLERY_IMAGES = [
 ];
 
 //#endregion
+
+//#region [CONTACT]
+
+export const CONTACT_SUBTEXT = `Consulte conosco a disponibilidade de vagas e agende uma 
+visita para conhecer melhor nosso trabalho, bla bla bla whiskas sache`;
+
+//#endregion

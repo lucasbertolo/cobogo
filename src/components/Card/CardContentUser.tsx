@@ -21,8 +21,8 @@ export default function CardContentUser(props: CardContentProps) {
         {props.name}
       </Heading>
 
-      <Box as="span" width="100%" h="16" bg="yellow.700" py="2">
-        <Text px="2" wordBreak="break-word" w="100%">
+      <Box as="span" width="100%" h="16" bg="gray.800" py="2">
+        <Text px="2" wordBreak="break-word" w="100%" color="white">
           {props.job}
         </Text>
       </Box>

@@ -12,7 +12,6 @@ export default function ArrowSlider({ direction, onClick }: ArrowSlider) {
   if (direction === 'right') directionProps.right = '10px';
   else directionProps.left = '10px';
 
-  console.log('direction', direction);
   return (
     <Box
       as="span"
@@ -30,6 +29,7 @@ export default function ArrowSlider({ direction, onClick }: ArrowSlider) {
       fontWeight="bold"
       zIndex="2"
       fontSize="lg"
+      opacity="0.7"
       onClick={onClick}
       {...directionProps}
     >
