@@ -1,7 +1,6 @@
 import { Flex, SimpleGrid, Text, Wrap } from '@chakra-ui/react';
 import Card from '../../components/Card';
 import Title from '../../components/Title';
-import { CONTAINER_WIDTH } from '../../config';
 import {
   CURRENT_TENANTS,
   TENANTS_SUBTEXT,
@@ -18,7 +17,7 @@ export default function Tenants() {
   return (
     <Flex
       margin="0 auto"
-      w={CONTAINER_WIDTH}
+      w="100%"
       justifyContent="flex-start"
       placeItems="center"
       direction="column"

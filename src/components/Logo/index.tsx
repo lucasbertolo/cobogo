@@ -1,4 +1,5 @@
-import { HStack, Text, Box, Image } from '@chakra-ui/react';
+import { HStack, Text, Box } from '@chakra-ui/react';
+import Image from 'next/image';
 
 export function SmallLogo() {
   return (
@@ -21,11 +22,12 @@ export function SmallLogo() {
 
 export function Logo() {
   return (
-    <Box w={'300px'} h={'300px'}>
+    <Box w="330px" h="350px" boxShadow="10px 12px 11px -5px rgba(0,0,0,0.75)">
       <Image
-        src="https://ik.imagekit.io/2agnc6wu5cbty/cobogo/logo_3ZXtIIwri.png"
+        src="/images/logo.png"
         alt="logo-cobogo"
-        boxShadow="10px 12px 11px -5px rgba(0,0,0,0.75)"
+        width="330px"
+        height="350px"
       />
     </Box>
   );

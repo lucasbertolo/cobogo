@@ -17,7 +17,7 @@ export default function CardContentUser(props: CardContentProps) {
       </Heading>
 
       <Box as="span" width="100%" h="16" bg="gray.800" py="2">
-        <Text px="2" wordBreak="break-word" w="100%" color="white">
+        <Text px="2" wordBreak="break-word" w="100%" color="white" paddingX="4">
           {props.job}
         </Text>
       </Box>

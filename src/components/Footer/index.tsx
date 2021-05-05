@@ -1,11 +1,9 @@
 import { Flex, Link, Text, Box } from '@chakra-ui/react';
-import { CONTAINER_WIDTH } from '../../config';
-import Social from '../Social';
 
 export default function Footer() {
   return (
     <Flex position="absolute" bottom="2" left="0" width="100%">
-      <Flex w={CONTAINER_WIDTH} margin="auto" justifyContent="space-between">
+      <Flex w="100%" margin="auto" justifyContent="space-between">
         <Box as="span">
           <Link
             href="https://lucasbertolo.github.io"

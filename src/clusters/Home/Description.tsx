@@ -18,8 +18,8 @@ export default function Description() {
         </Heading>
 
         <Text fontSize="sm" fontFamily="Open Sans">
-          Conheça nossas salas e texto maneiro com frase aleatória que seja mais
-          ou menos desse tamanho
+          Conheça nosso espaço personalizado com salas comerciais para seu
+          negócio
         </Text>
 
         <Text fontSize="xs" width="100%" pt="4" fontFamily="Open Sans">
