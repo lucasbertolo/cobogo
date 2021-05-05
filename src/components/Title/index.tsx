@@ -15,7 +15,7 @@ export default function Title({ label, rightInfo }: TitleProps) {
       position="relative"
       py="5"
     >
-      <Heading w="20%" fontSize="2xl">
+      <Heading w={['50%', '20%']} fontSize="2xl">
         {label}
       </Heading>
 

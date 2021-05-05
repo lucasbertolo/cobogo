@@ -5,24 +5,38 @@ import { GALLERY_IMAGES } from '../../config/data';
 
 export default function Gallery() {
   return (
-    <Flex h="100vh" mt="16" w="100%" m="auto" direction="column">
+    <Flex w="100%" m="50px auto" direction="column">
       <Title label="O Espaço" />
 
-      <Flex w="100%" h="80%" m="auto" pos="relative" placeItems="center">
+      <Flex
+        w="100%"
+        minH="90vh"
+        h="90vh"
+        m="auto"
+        pos="relative"
+        placeItems="center"
+      >
         <Box
           position="absolute"
-          width="90%"
+          width={['100%', '90%']}
           bg="gray.800"
-          h="95%"
+          h={['110%', '100%']}
           right="0"
           boxShadow="9px 10px 5px -5px rgba(0,0,0,0.2)"
         />
 
-        <HStack zIndex="1" h="80%" w="100%" spacing="0" fontFamily="Open Sans">
+        <Flex
+          zIndex="1"
+          h={['100vh', '70%']}
+          w="100%"
+          spacing="0"
+          fontFamily="Open Sans"
+          direction={['column', 'row']}
+        >
           <Slideshow images={GALLERY_IMAGES} />
 
-          <Box w="75%" h="100%">
-            <VStack spacing="4">
+          <Box w={['100%', '75%']} h="100%">
+            <VStack spacing="1">
               <Flex
                 w="100%"
                 flexDirection="row"
@@ -42,7 +56,7 @@ export default function Gallery() {
                   <Heading as="h6" color="red" fontSize="sm" w="100%">
                     Conforto
                   </Heading>
-                  <Text w="100%" fontSize="smaller">
+                  <Text w="100%" fontSize="smaller" lineHeight="5">
                     Além da excelente localização do imóvel, o{' '}
                     <b>Espaço Cobogó</b> possui cozinha, dois banheiros, e um
                     belo espaço de recepção. Com um ambiente agradavél e
@@ -61,11 +75,9 @@ export default function Gallery() {
                     Endereço
                   </Heading>
                   <Text w="100%" fontSize="smaller">
-                    Rua Dr. Otávio Teixeira Mendes, 1947
+                    Rua Dr. Otávio Teixeira Mendes, 1947 - Bairro Alto
                   </Text>
-                  <Text w="100%" fontSize="smaller">
-                    Bairro Alto
-                  </Text>
+
                   <Text w="100%" fontSize="smaller">
                     Piracicaba, São Paulo
                   </Text>
@@ -73,7 +85,7 @@ export default function Gallery() {
               </Box>
             </VStack>
           </Box>
-        </HStack>
+        </Flex>
       </Flex>
     </Flex>
   );

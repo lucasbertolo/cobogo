@@ -27,7 +27,7 @@ export default function Tenants() {
       <Text
         mb="8"
         textAlign="justify"
-        width="60%"
+        width={['100%', '60%']}
         alignSelf="flex-start"
         fontSize="sm"
         fontFamily="Open Sans"
