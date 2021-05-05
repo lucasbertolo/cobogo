@@ -11,25 +11,29 @@ export default function Index() {
   const width = useBreakpointValue({ base: '80%', md: '70%' });
 
   return (
-    <Flex maxW="100vw" minH="300vh">
-      <Flex width={width} direction="column" margin="auto" position="relative">
-        <SEO
-          title="Espaço Cobogó | Salas comerciais | Piracicaba, SP"
-          description="Espaço de salas comerciais no bairro Alto de Piracicaba, SP"
-        />
+    <Flex
+      maxW="100vw"
+      width={width}
+      direction="column"
+      margin="auto"
+      position="relative"
+    >
+      <SEO
+        title="Espaço Cobogó | Salas comerciais | Piracicaba, SP"
+        description="Espaço de salas comerciais no bairro Alto de Piracicaba, SP"
+      />
 
-        {/* <Header /> */}
+      {/* <Header /> */}
 
-        <Home />
+      <Home />
 
-        <Gallery />
+      <Gallery />
 
-        <Tenants />
+      <Tenants />
 
-        <Contact />
+      <Contact />
 
-        <Footer />
-      </Flex>
+      <Footer />
     </Flex>
   );
 }

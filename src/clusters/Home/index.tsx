@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <Flex
       margin="0 auto"
-      minH="100vh"
+      h={['80vh', '100vh']}
       w="100%"
       justifyContent="flex-start"
       placeItems="center"

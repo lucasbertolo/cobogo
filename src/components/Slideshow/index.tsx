@@ -56,6 +56,7 @@ export default function Slideshow({ images }: SlideshowProps) {
 
   return (
     <Flex
+      minH="200px"
       h="100%"
       w="100%"
       alignItems="center"

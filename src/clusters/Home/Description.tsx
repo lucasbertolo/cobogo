@@ -13,11 +13,11 @@ export default function Description() {
           Espaço Cobogó
         </Heading>
 
-        <Heading as="h2" w="100%" fontSize="2xl" fontWeight="normal">
+        <Heading as="h2" w="100%" fontSize={['1xl', '2xl']} fontWeight="normal">
           Salas Comerciais
         </Heading>
 
-        <Text fontSize="sm" fontFamily="Open Sans">
+        <Text fontSize={['smaller', 'sm']} fontFamily="Open Sans">
           Conheça nosso espaço personalizado com salas comerciais para seu
           negócio
         </Text>

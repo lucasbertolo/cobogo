@@ -9,6 +9,7 @@ export default function Footer() {
             href="https://lucasbertolo.github.io"
             _hover={{ textDecoration: 'none' }}
             target="_blank"
+            rel="noreferrer"
           >
             <Text
               fontSize="smaller"
