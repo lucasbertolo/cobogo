@@ -18,7 +18,7 @@ export default function Header() {
       position="fixed"
       zIndex={1}
       opacity={isScrolling ? '0.15' : '0.35'}
-      transition="opacity 0.3s"
+      transition="opacity 0.4s"
       _hover={{
         opacity: '1',
       }}

@@ -31,7 +31,7 @@ export default function Gallery() {
                 justifyContent="space-between"
               >
                 <Heading as="h4" fontSize="xl" w="50%" py="4" px="6">
-                  Salas planejadas
+                  Salas Comerciais
                 </Heading>
                 <Text px="16" py="4" fontSize="sm">
                   2020
@@ -41,11 +41,14 @@ export default function Gallery() {
               <Box p="6">
                 <VStack spacing="3">
                   <Heading as="h6" color="red" fontSize="sm" w="100%">
-                    Planejamento
+                    Conforto
                   </Heading>
                   <Text w="100%" fontSize="smaller">
-                    Bla bla bla whiskas sache, Bla bla bla whiskas sache, Bla
-                    bla bla whiskas sache, Bla bla bla whiskas sache
+                    Além da excelente localização do imóvel, o{' '}
+                    <b>Espaço Cobogó</b> possui cozinha, dois banheiros, e um
+                    belo espaço de recepção. Com um ambiente agradavél e
+                    tranquilo, todas as salas possuem ar condicionado e
+                    excelente espaço{' '}
                   </Text>
 
                   <Heading as="h6" color="white" fontSize="sm" w="100%">
@@ -56,11 +59,16 @@ export default function Gallery() {
                   </Text>
 
                   <Heading as="h6" fontSize="sm" w="100%">
-                    Planejamento
+                    Endereço
                   </Heading>
                   <Text w="100%" fontSize="smaller">
-                    Bla bla bla whiskas sache, Bla bla bla whiskas sache, Bla
-                    bla bla whiskas sache, Bla bla bla whiskas sache
+                    Rua Dr. Otávio Teixeira Mendes, 1947
+                  </Text>
+                  <Text w="100%" fontSize="smaller">
+                    Bairro Alto
+                  </Text>
+                  <Text w="100%" fontSize="smaller">
+                    Piracicaba, São Paulo
                   </Text>
                 </VStack>
               </Box>

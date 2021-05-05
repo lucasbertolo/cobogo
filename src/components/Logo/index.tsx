@@ -7,6 +7,10 @@ export function SmallLogo() {
         fontSize={['1xl', '2xl']}
         fontWeight="bold"
         letterSpacing="tight"
+        _hover={{
+          color: 'yellow.500',
+        }}
+        transition="color 1.3s"
         w="64"
       >
         cobogó
@@ -17,10 +21,11 @@ export function SmallLogo() {
 
 export function Logo() {
   return (
-    <Box w={'400px'} h={'300px'}>
+    <Box w={'300px'} h={'300px'}>
       <Image
-        src="https://ik.imagekit.io/2agnc6wu5cbty/logo_8fNKKUSyh.png"
+        src="https://ik.imagekit.io/2agnc6wu5cbty/cobogo/logo_3ZXtIIwri.png"
         alt="logo-cobogo"
+        boxShadow="10px 12px 11px -5px rgba(0,0,0,0.75)"
       />
     </Box>
   );

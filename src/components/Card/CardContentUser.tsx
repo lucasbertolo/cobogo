@@ -4,17 +4,12 @@ export interface CardContentProps {
   name?: string;
   srcImg?: string;
   job?: string;
-  numberRoom?: number;
   email?: string;
 }
 
 export default function CardContentUser(props: CardContentProps) {
   return (
     <VStack spacing="4">
-      <Box as="span" position="absolute" top="5px" left="5px">
-        <Text fontSize="large">0{props.numberRoom}</Text>
-      </Box>
-
       <Avatar size="2xl" name={props.name} src={props.srcImg} bg="gray.900" />
 
       <Heading as="h4" fontSize="lg" wordBreak="break-word">

@@ -21,8 +21,8 @@ export default function Card(props: CardProps) {
       bg="yellow.500"
       direction="column"
       position="relative"
-      boxShadow="0 -2px 4px #ffffff"
-      py="9"
+      boxShadow="10px 12px 11px -5px rgba(0,0,0,0.75)"
+      py="12"
       color="black"
       justifyContent="space-between"
       whileHover={{ scale: 1.1 }}

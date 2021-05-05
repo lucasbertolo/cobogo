@@ -11,12 +11,6 @@ import {
 export default function Tenants() {
   const availableRooms = TOTAL_ROOMS - CURRENT_TENANTS.length;
 
-  let tenants = [];
-
-  if (availableRooms > 0) {
-    tenants = CURRENT_TENANTS.concat([{ available: true }]);
-  }
-
   const availableRoomsLabel = `${availableRooms || 'Nenhuma'} sala ${
     availableRooms > 1 ? 's' : ''
   } disponive${availableRooms > 1 ? 'is' : 'l'}`;
@@ -45,19 +39,14 @@ export default function Tenants() {
 
       <SimpleGrid
         minChildWidth="150px"
-        spacing="7"
+        spacing="14"
         paddingY="10"
         w="100%"
         minH="450px"
       >
-        {tenants
-          .sort((a, b) => a.numberRoom - b.numberRoom)
-          .map((tenant, index) => (
-            <Card
-              {...tenant}
-              key={`${tenant.name}${tenant.numberRoom}${index}`}
-            />
-          ))}
+        {CURRENT_TENANTS.map((tenant, index) => (
+          <Card {...tenant} key={`${tenant.name}${index}`} />
+        ))}
       </SimpleGrid>
     </Flex>
   );

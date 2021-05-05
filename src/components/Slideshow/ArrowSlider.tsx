@@ -31,6 +31,11 @@ export default function ArrowSlider({ direction, onClick }: ArrowSlider) {
       fontSize="lg"
       opacity="0.7"
       onClick={onClick}
+      _hover={{
+        bg: 'blackAlpha.500',
+        transform: 'scale(1.1)',
+      }}
+      transition="all 0.3s"
       {...directionProps}
     >
       {direction === 'right' ? <FaChevronRight /> : <FaChevronLeft />}
