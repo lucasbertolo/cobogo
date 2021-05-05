@@ -5,14 +5,14 @@ import { GALLERY_IMAGES } from '../../config/data';
 
 export default function Gallery() {
   return (
-    <Flex w="100%" m="50px auto" direction="column">
+    <Flex w="100%" marginX="auto" marginY={['70px', '50px']} direction="column">
       <Title label="O Espaço" />
 
       <Flex
         w="100%"
         minH="90vh"
         h="90vh"
-        m="auto"
+        m="50px auto"
         pos="relative"
         placeItems="center"
       >
@@ -35,7 +35,7 @@ export default function Gallery() {
         >
           <Slideshow images={GALLERY_IMAGES} />
 
-          <Box w={['100%', '75%']} h="100%">
+          <Box w={['100%', '75%']}>
             <VStack spacing="1">
               <Flex
                 w="100%"
@@ -43,7 +43,7 @@ export default function Gallery() {
                 bg="gray.700"
                 justifyContent="space-between"
               >
-                <Heading as="h4" fontSize="xl" w="50%" py="4" px="6">
+                <Heading as="h4" fontSize="xl" w={['70%', '50%']} py="4" px="6">
                   Salas Comerciais
                 </Heading>
                 <Text px="16" py="4" fontSize="sm">
