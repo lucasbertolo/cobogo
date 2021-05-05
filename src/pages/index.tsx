@@ -18,7 +18,7 @@ export default function Index() {
           description="Espaço de salas comerciais no bairro Alto de Piracicaba, SP"
         />
 
-        <Header />
+        {/* <Header /> */}
 
         <Home />
 
