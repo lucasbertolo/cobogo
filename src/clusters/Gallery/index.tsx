@@ -12,7 +12,8 @@ export default function Gallery() {
         w="100%"
         minH="90vh"
         h="90vh"
-        m="50px auto"
+        marginY={['150px', '70px']}
+        marginX="auto"
         pos="relative"
         placeItems="center"
       >
@@ -20,7 +21,7 @@ export default function Gallery() {
           position="absolute"
           width={['100%', '90%']}
           bg="gray.800"
-          h={['110%', '100%']}
+          h={['100%', '100%']}
           right="0"
           boxShadow="9px 10px 5px -5px rgba(0,0,0,0.2)"
         />
@@ -35,7 +36,7 @@ export default function Gallery() {
         >
           <Slideshow images={GALLERY_IMAGES} />
 
-          <Box w={['100%', '75%']}>
+          <Box w={['100%', '75%']} bg="gray.800">
             <VStack spacing="1">
               <Flex
                 w="100%"
