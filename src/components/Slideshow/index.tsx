@@ -38,7 +38,7 @@ const swipePower = (offset: number, velocity: number) => {
 };
 
 interface SlideshowProps {
-  images: string[];
+  images: { src: string; alt: string }[];
 }
 
 export default function Slideshow({ images }: SlideshowProps) {
@@ -67,7 +67,8 @@ export default function Slideshow({ images }: SlideshowProps) {
         <motion.img
           style={{ position: 'absolute', maxWidth: '100%', height: '100%' }}
           key={page}
-          src={images[imageIndex]}
+          alt={images[imageIndex].alt}
+          src={images[imageIndex].src}
           custom={direction}
           variants={variants}
           initial="enter"
