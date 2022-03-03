@@ -1,9 +1,8 @@
-import { Flex, Box, useBreakpointValue } from '@chakra-ui/react';
-import Header from '../components/Header';
+import { Flex, useBreakpointValue } from '@chakra-ui/react';
+import Contact from '../clusters/Contact';
+import Gallery from '../clusters/Gallery';
 import Home from '../clusters/Home';
 import Tenants from '../clusters/Tenants';
-import Gallery from '../clusters/Gallery';
-import Contact from '../clusters/Contact';
 import Footer from '../components/Footer';
 import SEO from '../components/Seo';
 

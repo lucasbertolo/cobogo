@@ -1,30 +1,22 @@
-import { Flex, Heading, Text, VStack } from '@chakra-ui/react';
+import { Box, Flex, Text, VStack, Image } from "@chakra-ui/react";
 
 export default function Description() {
   return (
     <Flex mt="20" maxW="40%" zIndex={2}>
       <VStack spacing="4">
-        <Heading
-          as="h1"
-          w="100%"
-          fontSize={['1xl', '3xl', '5xl']}
-          letterSpacing="tight"
-        >
-          Espaço Cobogó
-        </Heading>
+        <Image src="./images/logo.png" alt="Logo Espaço Cobogó" fit="cover" />
 
-        <Heading as="h2" w="100%" fontSize={['1xl', '2xl']} fontWeight="normal">
-          Salas Comerciais
-        </Heading>
+        <Box pl="6">
+          <Text as="h3" fontSize={["smaller", "sm"]}>
+            O nosso espaço é tranquilo, agradável e muito charmoso. Aqui você
+            encontra diferentes serviços com profissionais dedicados para te
+            atender. Entre em contato e venha conhecer!
+          </Text>
 
-        <Text fontSize={['smaller', 'sm']} fontFamily="Open Sans">
-          Conheça nosso espaço personalizado com salas comerciais para seu
-          negócio
-        </Text>
-
-        <Text fontSize="xs" width="100%" pt="4" fontFamily="Open Sans">
-          * consulte a disponibilidade das salas
-        </Text>
+          <Text as="h4" fontSize="xs" width="100%" pt="4">
+            * consulte a disponibilidade das salas para locação
+          </Text>
+        </Box>
       </VStack>
     </Flex>
   );
