@@ -1,4 +1,4 @@
-import { CardProps } from '../components/Card';
+import { CardProps } from "../components/Card";
 
 //#region [TENANTS]
 export const TOTAL_ROOMS = 4;
@@ -10,22 +10,22 @@ Conheça os nossos atuais colegas e suas respectivas áreas. `;
 
 export const CURRENT_TENANTS: CardProps[] = [
   {
-    name: 'LMS Arquitetura',
-    job: 'Arquiteta, Urbanista e design de interiores',
-    email: 'lms-arquitetura@gmail.com',
-    brandColor: '#a08c91',
+    name: "LMS Arquitetura",
+    job: "Arquiteta, Urbanista e design de interiores",
+    email: "lms-arquitetura@gmail.com",
+    brandColor: "#a08c91",
   },
   {
-    name: 'Aline',
-    job: 'Nutricionista',
-    email: 'aasdasdsdaasd',
-    brandColor: 'green',
+    name: "Aline",
+    job: "Nutricionista",
+    email: "aasdasdsdaasd",
+    brandColor: "green",
   },
   {
-    name: 'Ester ?',
-    job: 'Psicóloga',
-    email: 'lms-arquitetura@gmail.com',
-    brandColor: '#FFFFFF',
+    name: "Ester ?",
+    job: "Psicóloga",
+    email: "lms-arquitetura@gmail.com",
+    brandColor: "#FFFFFF",
   },
 ];
 
@@ -35,19 +35,40 @@ export const CURRENT_TENANTS: CardProps[] = [
 
 export const GALLERY_IMAGES = [
   {
-    src:
-      'https://d33wubrfki0l68.cloudfront.net/dd23708ebc4053551bb33e18b7174e73b6e1710b/dea24/static/images/wallpapers/shared-colors@2x.png',
-    alt: 'sala',
+    src: "./images/rooms/1.jpg",
+    alt: "entrada",
   },
   {
-    src:
-      'https://d33wubrfki0l68.cloudfront.net/49de349d12db851952c5556f3c637ca772745316/cfc56/static/images/wallpapers/bridge-02@2x.png',
-    alt: 'recepção',
+    src: "./images/rooms/2.jpeg",
+    alt: "entrada distancia",
   },
   {
-    src:
-      'https://d33wubrfki0l68.cloudfront.net/594de66469079c21fc54c14db0591305a1198dd6/3f4b1/static/images/wallpapers/bridge-01@2x.png',
-    alt: 'jardim',
+    src: "./images/rooms/3.jpg",
+    alt: "entrada noite",
+  },
+  {
+    src: "./images/rooms/4.jpeg",
+    alt: "hall",
+  },
+  {
+    src: "./images/rooms/5.jpeg",
+    alt: "recepcao",
+  },
+  {
+    src: "./images/rooms/6.jpeg",
+    alt: "flor",
+  },
+  {
+    src: "./images/rooms/7.jpeg",
+    alt: "jardim",
+  },
+  {
+    src: "./images/rooms/8.jpeg",
+    alt: "jardim",
+  },
+  {
+    src: "./images/rooms/9.jpeg",
+    alt: "flor",
   },
 ];
 
