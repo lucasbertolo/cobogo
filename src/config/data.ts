@@ -1,31 +1,69 @@
-import { CardProps } from "../components/Card";
+import { CardProps } from "../components/Card/CardContentUser";
 
 //#region [TENANTS]
 export const TOTAL_ROOMS = 4;
 
-export const TENANTS_SUBTEXT = `Com um ambiente planejado, nosso espaço está pronto pra 
-atender diversos tipos de profissionais, e proporcionar a oportunidade deles 
-desempenharem seu trabalho em um ambiente leve, descontraído e bem preparado. 
-Conheça os nossos atuais colegas e suas respectivas áreas. `;
+export const TENANTS_SUBTEXT = `Não há salas disponíveis para locação no momento, mas você pode fazer parte da nossa lista de espera enviando um e-mail para: espacocobogopiracicaba@gmail.com`;
 
 export const CURRENT_TENANTS: CardProps[] = [
   {
-    name: "LMS Arquitetura",
-    job: "Arquiteta, Urbanista e design de interiores",
-    email: "lms-arquitetura@gmail.com",
+    name: "Laís M. Salvador",
+    job: "Arquiteta e Interiores",
+    phone: "19 98132-0147",
     brandColor: "#a08c91",
+    srcImg: "./images/profile/1.jpg",
+    socialMedia: {
+      instagram: {
+        link: "https://www.instagram.com/lms_arquitetura/",
+        label: "lms_arquitetura",
+      },
+      website: "https://lms-arquitetura.com",
+    },
+    roomNumber: 1,
   },
   {
-    name: "Aline",
+    name: "Aline Maranha",
     job: "Nutricionista",
-    email: "aasdasdsdaasd",
     brandColor: "green",
+    phone: "19 999005715",
+    srcImg: "./images/profile/2.png",
+
+    socialMedia: {
+      instagram: {
+        link: "https://www.instagram.com/nutricionista.alinemaranha/",
+        label: "nutricionista.alinemaranha",
+      },
+    },
+    roomNumber: 2,
   },
   {
-    name: "Ester ?",
-    job: "Psicóloga",
-    email: "lms-arquitetura@gmail.com",
+    name: "Tauri Solar",
+    job: "Empresa de Energia Solar",
+    srcImg: "./images/profile/3.png",
+    phone: "19 97116-3389",
     brandColor: "#FFFFFF",
+    roomNumber: 3,
+    socialMedia: {
+      instagram: {
+        link: "https://www.instagram.com/tauri_energia_solar/",
+        label: "tauri_energia_solar",
+      },
+      website: "https://www.taurisolar.com",
+    },
+  },
+  {
+    name: "Ester Sanson",
+    job: "Psicóloga",
+    phone: "19 99216-9099",
+    brandColor: "#FF2103",
+    srcImg: "./images/profile/4.png",
+    roomNumber: 4,
+    socialMedia: {
+      instagram: {
+        link: "https://www.instagram.com/estersansonpsicologa/",
+        label: "estersansonpsicologa",
+      },
+    },
   },
 ];
 
