@@ -25,7 +25,7 @@ export const CURRENT_TENANTS: CardProps[] = [
     name: "Aline Maranha",
     job: "Nutricionista",
     brandColor: "green",
-    phone: "19 999005715",
+    phone: "19 99900-5715",
     srcImg: "./images/profile/2.png",
 
     socialMedia: {

@@ -43,12 +43,15 @@ export interface CardProps extends CardContentProps {
 export default function CardContentUser(props: CardProps) {
   return (
     <VStack spacing="4">
+      <Flex px="4" justifyContent={"flex-start"} alignItems="flex-start" width="100%">
+        <Heading as="h4" fontSize="lg" wordBreak="break-word">
+          Sala {props.roomNumber}
+        </Heading>
+      </Flex>
       <Avatar size="2xl" name={props.name} src={props.srcImg} bg="gray.900" />
-
       <Heading as="h4" fontSize="lg" wordBreak="break-word">
         {props.name}
       </Heading>
-
       <Flex
         as="span"
         width="100%"
@@ -61,7 +64,6 @@ export default function CardContentUser(props: CardProps) {
           {props.job}
         </Text>
       </Flex>
-
       <Flex
         flexDir={"column"}
         justifyContent="flex-start"
