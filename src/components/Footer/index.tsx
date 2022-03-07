@@ -29,7 +29,7 @@ export default function Footer() {
           _hover={{ color: 'whiteAlpha.900' }}
           transition="color 0.4s"
         >
-          2021
+          {new Date().getFullYear()}
         </Text>
       </Flex>
     </Flex>

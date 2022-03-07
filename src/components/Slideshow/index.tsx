@@ -1,9 +1,9 @@
-import { Flex } from '@chakra-ui/react';
-import { AnimatePresence, motion } from 'framer-motion';
-import { wrap } from 'popmotion';
-import * as React from 'react';
-import { useState } from 'react';
-import ArrowSlider from './ArrowSlider';
+import { Flex } from "@chakra-ui/react";
+import { AnimatePresence, motion } from "framer-motion";
+import { wrap } from "popmotion";
+import * as React from "react";
+import { useState } from "react";
+import ArrowSlider from "./ArrowSlider";
 
 const variants = {
   enter: (direction: number) => {
@@ -65,7 +65,13 @@ export default function Slideshow({ images }: SlideshowProps) {
     >
       <AnimatePresence initial={false} custom={direction}>
         <motion.img
-          style={{ position: 'absolute', maxWidth: '100%', height: '100%' }}
+          style={{
+            position: "absolute",
+            maxWidth: "100%",
+            height: "100%",
+            objectFit: 'cover',
+            width: '100%'
+          }}
           key={page}
           alt={images[imageIndex].alt}
           src={images[imageIndex].src}
@@ -75,7 +81,7 @@ export default function Slideshow({ images }: SlideshowProps) {
           animate="center"
           exit="exit"
           transition={{
-            x: { type: 'spring', stiffness: 300, damping: 30 },
+            x: { type: "spring", stiffness: 300, damping: 30 },
             opacity: { duration: 0.2 },
           }}
           drag="x"

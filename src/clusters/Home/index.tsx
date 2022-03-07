@@ -1,8 +1,10 @@
-import { Flex, Box } from "@chakra-ui/react";
+import { Flex, useMediaQuery } from "@chakra-ui/react";
 import Description from "./Description";
 import MainImage from "./MainImage";
 
 export default function Home() {
+  const [isLargerThan720] = useMediaQuery("(min-width: 720px)");
+
   return (
     <Flex
       margin="0 auto"
@@ -13,7 +15,7 @@ export default function Home() {
       direction="row"
     >
       <Description />
-      <MainImage />
+      {isLargerThan720 && <MainImage />}
     </Flex>
   );
 }

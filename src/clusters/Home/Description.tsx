@@ -1,8 +1,10 @@
-import { Box, Flex, Text, VStack, Image } from "@chakra-ui/react";
+import { Box, Flex, Text, VStack, Image, useMediaQuery } from "@chakra-ui/react";
 
 export default function Description() {
+  const [isLargerThan720] = useMediaQuery("(min-width: 720px)");
+
   return (
-    <Flex mt="20" maxW="40%" zIndex={2}>
+    <Flex mt="20" maxW={isLargerThan720 ? '40%' : '100%'} zIndex={2}>
       <VStack spacing="4">
         <Image src="./images/logo.png" alt="Logo Espaço Cobogó" fit="cover" />
 
