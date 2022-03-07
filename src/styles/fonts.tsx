@@ -6,8 +6,8 @@ export default function Fonts() {
       styles={`
         @font-face{
           font-family:"fidena-regular";
-          src: url("https://fontsme.com/wp-data/f/755/22755/file/Fidena.otf") format("opentype"),
-          url("https://fontsme.com/wp-data/f/755/22755/file/Fidena.otf") format("truetype");
+          src: url("./fonts/Fidena.otf") format("opentype"),
+          url("./fonts/Fidena.otf") format("truetype");
         }
        
         /* latin */
